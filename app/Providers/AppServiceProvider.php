@@ -29,6 +29,10 @@ class AppServiceProvider extends ServiceProvider {
 			'Illuminate\Contracts\Auth\Registrar',
 			'EmoFoodie\Services\Registrar'
 		);
+
+	    if ($this->app->environment() == 'local') {
+	        $this->app->register('Laracasts\Generators\GeneratorsServiceProvider');
+	    }
 	}
 
 }
