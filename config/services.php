@@ -30,7 +30,7 @@ return [
 	],
 
 	'stripe' => [
-		'model'  => 'EmoFoodie\User',
+		'model'  => 'App\User',
 		'key' => '',
 		'secret' => '',
 	],

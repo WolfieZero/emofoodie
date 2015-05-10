@@ -139,11 +139,11 @@ return [
 		/*
 		 * Application Service Providers...
 		 */
-		'EmoFoodie\Providers\AppServiceProvider',
-		'EmoFoodie\Providers\BusServiceProvider',
-		'EmoFoodie\Providers\ConfigServiceProvider',
-		'EmoFoodie\Providers\EventServiceProvider',
-		'EmoFoodie\Providers\RouteServiceProvider',
+		'App\Providers\AppServiceProvider',
+		'App\Providers\BusServiceProvider',
+		'App\Providers\ConfigServiceProvider',
+		'App\Providers\EventServiceProvider',
+		'App\Providers\RouteServiceProvider',
 
 	],
 

@@ -213,6 +213,7 @@ class LogTableSeeder extends Seeder
 
 	public function rand_time()
 	{
-		return time() + rand(-1000000, 1000000);
+		$time = time() + rand(-1000000, 1000000);
+		return date("Y-m-d H:i:s", $time);
 	}
 }

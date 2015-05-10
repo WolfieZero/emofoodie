@@ -1,4 +1,4 @@
-<?php namespace EmoFoodie\Commands;
+<?php namespace App\Commands;
 
 abstract class Command {
 

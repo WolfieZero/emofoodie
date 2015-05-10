@@ -11,7 +11,9 @@
 |
 */
 
-Route::get('/', 'WelcomeController@index');
+Route::get('/', function() {
+	return View('welcome');
+});
 
 Route::get('home', 'HomeController@index');
 
@@ -20,6 +22,8 @@ Route::controllers([
 	'password' => 'Auth\PasswordController',
 ]);
 
-Route::get('env', function() {
-	echo "environment=", App::environment(), "\n";;
+Route::group(array('prefix' => 'api'), function() {
+
+	Route::resource('log', 'LogController');
+
 });
