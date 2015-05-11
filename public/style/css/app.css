@@ -1,0 +1,36 @@
+body {
+    font-family: 'Maven Pro', sans-serif;
+}
+
+a {
+    color: #FF0080;
+}
+
+.logs {
+    margin-bottom: .5em;
+    margin-top: .5em;
+        padding-left: 0;
+}
+
+.log__container {
+    background-color: #efefef;
+    margin-bottom: .5em;
+    margin-top: .5em;
+    padding: .5em
+}
+
+.log__title {
+    font-size: 1.25em;
+}
+
+.food,
+.emotion {
+    margin-left: .1em;
+    margin-right: .1em;
+}
+
+.note {
+    border-top: 1px solid #ccc;
+    margin-top: .25em;
+    padding-top: .25em;
+}

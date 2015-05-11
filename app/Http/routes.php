@@ -12,10 +12,8 @@
 */
 
 Route::get('/', function() {
-	return View('welcome');
+    return view('index');
 });
-
-Route::get('home', 'HomeController@index');
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',
