@@ -38,8 +38,8 @@
 
         var vm = this;
 
-        vm.food_values = [];
         vm.emotion_values = [];
+        vm.food_values = [];
 
         // Get lists from API
         // ---------------------------------------------------------------------
@@ -52,9 +52,14 @@
 
 
         vm.addEmotionValue = function() {
-            alert(vm.emotion_val);
             vm.emotion_values.push(vm.emotion_val);
             vm.emotion_val = '';
+        };
+
+
+        vm.addFoodValue = function() {
+            vm.food_values.push(vm.food_val);
+            vm.food_val = '';
         };
 
 
