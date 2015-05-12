@@ -5,9 +5,9 @@ use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
 
-use App\Log;
+use App\Emotion;
 
-class LogController extends Controller {
+class EmotionController extends Controller {
 
 	/**
 	 * Display a listing of the resource.
@@ -16,9 +16,8 @@ class LogController extends Controller {
 	 */
 	public function index()
 	{
-		return Log::where('user_id', '=', env('USER_ID', 1))
-			->food_emotion()
-			->orderBy('actioned')
+		return Emotion::where('user_id', '=', env('USER_ID', 1))
+			->orderBy('emotion')
 			->get();
 	}
 
@@ -39,10 +38,7 @@ class LogController extends Controller {
 	 */
 	public function store()
 	{
-		$data = Request::all();
-		$timeentry = new TimeEntry();
-		$timeentry->fill($data);
-		$timeentry->save();
+		//
 	}
 
 	/**

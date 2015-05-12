@@ -23,5 +23,7 @@ Route::controllers([
 Route::group(array('prefix' => 'api'), function() {
 
 	Route::resource('log', 'LogController');
+	Route::resource('food', 'FoodController');
+	Route::resource('emotion', 'EmotionController');
 
 });

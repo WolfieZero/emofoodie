@@ -28,14 +28,12 @@
     </div>
 
     <div id="add-log" class="reveal-modal" data-reveal aria-labelledby="Add log entry" aria-hidden="true" role="dialog">
-        <h2 id="modalTitle">Add entry</h2>
-        <p class="lead">Your couch.  It is mine.</p>
-        <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>
+        <div ng-include src="'template/log-add.php'"></div>
         <a class="close-reveal-modal" aria-label="Close">&#215;</a>
     </div>
 
-    <div class="row logs" ng-controller="LogController as log">
-        <article class="log column" ng-repeat="log in log.items">
+    <div class="row logs" ng-controller="ViewLogController as viewLog">
+        <article class="log column" ng-repeat="log in viewLog.items">
             <div class="log__container">
 
                 <div class="row">
