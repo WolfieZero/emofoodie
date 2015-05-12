@@ -3,10 +3,10 @@
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Eloquent\Model;
 
-use EmoFoodie\User;
-use EmoFoodie\Log;
-use EmoFoodie\Food;
-use EmoFoodie\Emotion;
+use App\User;
+use App\Log;
+use App\Food;
+use App\Emotion;
 
 class DatabaseSeeder extends Seeder {
 
