@@ -28,7 +28,10 @@ class EmotionController extends Controller {
 	 */
 	public function create()
 	{
-		//
+		$data = Request::all();
+		$emotion = new Emotion();
+		$emotion->fill($data);
+		$emotion->save();
 	}
 
 	/**

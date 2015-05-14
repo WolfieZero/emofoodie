@@ -38,7 +38,10 @@ class FoodController extends Controller {
 	 */
 	public function store()
 	{
-		//
+		$data = Request::all();
+		$food = new Food();
+		$food->fill($data);
+		$food->save();
 	}
 
 	/**

@@ -23,7 +23,7 @@
         <nav class="tab-bar">
             <div class="left-small"><a role="button" href="#idOfRightMenu" class="left-off-canvas-toggle menu-icon" ><span></span></a></div>
             <div class="middle tab-bar-section">Emo Foodie</div>
-            <div class="right-small text-center"><a href="#" data-reveal-id="add-log"><i class="fa fa-pencil-square-o fa-lg"></i></a></div>
+            <div class="right-small text-center"><a href="#" style="color: #fff;" data-reveal-id="add-log"><i class="fa fa-pencil-square-o fa-lg"></i></a></div>
         </nav>
     </div>
 

@@ -40,9 +40,9 @@ class LogController extends Controller {
 	public function store()
 	{
 		$data = Request::all();
-		$timeentry = new TimeEntry();
-		$timeentry->fill($data);
-		$timeentry->save();
+		$log = new Log();
+		$log->fill($data);
+		$log->save();
 	}
 
 	/**

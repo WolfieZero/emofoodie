@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Eloquent\Model;
 
-class log extends Model {
+class Log extends Model {
 
 	protected $hidden = ['user_id'];
 
